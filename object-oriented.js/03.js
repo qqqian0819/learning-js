@@ -145,7 +145,7 @@ some_obj.say.apply(my_object,['a','b']); // call和apply不同在于参数传递
 
 function a(){
 	// arguments 没有数组的内建函数,eg reverse,sort....
-	// var args = [].slice.call(arguments);// <=> Array.prototype.slice.call(arguments)
+	var args = [].slice.call(arguments);// <=> Array.prototype.slice.call(arguments)
 	return args.reverse();
 }
 
